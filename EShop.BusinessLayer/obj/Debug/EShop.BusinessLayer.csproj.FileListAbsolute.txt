@@ -1,0 +1,6 @@
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.BusinessLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.BusinessLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\obj\Debug\EShop.BusinessLayer.csprojResolveAssemblyReference.cache
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\obj\Debug\EShop.BusinessLayer.csproj.CoreCompileInputs.cache
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\obj\Debug\EShop.BusinessLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\obj\Debug\EShop.BusinessLayer.pdb

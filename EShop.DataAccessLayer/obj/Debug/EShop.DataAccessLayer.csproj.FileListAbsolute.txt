@@ -1,0 +1,6 @@
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.DataAccessLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.DataAccessLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.pdb
