@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EShop.CoreLayer
 {
-    public class Class1
+    public interface IEntity
     {
+        // buradan miras alan tablo bir veritabanı tablosudur.
     }
 }
