@@ -13,6 +13,8 @@ namespace EShop.DataAccessLayer.DataAccess
         // Category add 
         public DbSet<Category> Categories { get; set; }
         public DbSet<SubCategory> SubCategories{ get; set; }
+
+        public DbSet<Comment> Comments  { get; set; }
         public E_Shop_Context():base("EShopConnStr")
         {
 

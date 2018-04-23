@@ -56,6 +56,10 @@
     <Compile Include="Migrations\201804231803522_Create_SubCategoryTable.Designer.cs">
       <DependentUpon>201804231803522_Create_SubCategoryTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804231808228_Create_CommentTable.cs" />
+    <Compile Include="Migrations\201804231808228_Create_CommentTable.Designer.cs">
+      <DependentUpon>201804231808228_Create_CommentTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -75,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804231803522_Create_SubCategoryTable.resx">
       <DependentUpon>201804231803522_Create_SubCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231808228_Create_CommentTable.resx">
+      <DependentUpon>201804231808228_Create_CommentTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
