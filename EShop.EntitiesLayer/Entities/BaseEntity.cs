@@ -8,9 +8,9 @@ namespace EShop.EntitiesLayer.Entities
 {
     public class BaseEntity
     {
-        public String CreatedDate { get; set; }
-        public String ModifiedDate { get; set; }
-        public String RemovedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
+        public DateTime? RemovedDate { get; set; }
 
     }
 }

@@ -4,3 +4,5 @@ D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\obj\Debug\EShop.EntitiesLayer.csproj
 D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\obj\Debug\EShop.EntitiesLayer.csproj.CoreCompileInputs.cache
 D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\obj\Debug\EShop.EntitiesLayer.dll
 D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\obj\Debug\EShop.EntitiesLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\bin\Debug\EShop.CoreLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\bin\Debug\EShop.CoreLayer.pdb

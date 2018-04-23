@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\BaseEntity.cs" />
-    <Compile Include="Entities\BasketOfCustomer.cs" />
+    <Compile Include="Entities\Sale.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\Customer.cs" />
@@ -54,6 +54,9 @@
       <Project>{68B2232B-566C-4D0A-A5C5-83BA145AD050}</Project>
       <Name>EShop.CoreLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ComplexTypes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

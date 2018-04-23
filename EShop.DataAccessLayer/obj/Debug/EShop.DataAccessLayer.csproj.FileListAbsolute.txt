@@ -4,3 +4,14 @@ D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.cs
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.csproj.CoreCompileInputs.cache
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.dll
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.DataAccessLayer.dll.config
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.EntitiesLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.CoreLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.EntitiesLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.CoreLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_CategoryTable.resources
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.csproj.GenerateResource.Cache
