@@ -12,7 +12,12 @@ namespace EShop.DataAccessLayer.DataAccess
     {
         // Category add 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<SubCategory> SubCategories{ get; set; }
+        public E_Shop_Context():base("EShopConnStr")
+        {
 
+        }
+        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

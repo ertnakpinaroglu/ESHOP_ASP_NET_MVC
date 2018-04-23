@@ -48,9 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\E_Shop_Context.cs" />
-    <Compile Include="Migrations\201804231737352_Create_CategoryTable.cs" />
-    <Compile Include="Migrations\201804231737352_Create_CategoryTable.Designer.cs">
-      <DependentUpon>201804231737352_Create_CategoryTable.cs</DependentUpon>
+    <Compile Include="Migrations\201804231800341_Create_CategoryTable.cs" />
+    <Compile Include="Migrations\201804231800341_Create_CategoryTable.Designer.cs">
+      <DependentUpon>201804231800341_Create_CategoryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231803522_Create_SubCategoryTable.cs" />
+    <Compile Include="Migrations\201804231803522_Create_SubCategoryTable.Designer.cs">
+      <DependentUpon>201804231803522_Create_SubCategoryTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,8 +70,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804231737352_Create_CategoryTable.resx">
-      <DependentUpon>201804231737352_Create_CategoryTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804231800341_Create_CategoryTable.resx">
+      <DependentUpon>201804231800341_Create_CategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231803522_Create_SubCategoryTable.resx">
+      <DependentUpon>201804231803522_Create_SubCategoryTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

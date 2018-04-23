@@ -13,7 +13,7 @@ namespace EShop.DataAccessLayer.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201804231737352_Create_CategoryTable"; }
+            get { return "201804231800341_Create_CategoryTable"; }
         }
         
         string IMigrationMetadata.Source
