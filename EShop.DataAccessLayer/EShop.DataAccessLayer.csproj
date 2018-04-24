@@ -47,6 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IBrandDal.cs" />
+    <Compile Include="Abstract\ICategoryDal.cs" />
+    <Compile Include="Abstract\ICommentDal.cs" />
+    <Compile Include="Abstract\ICustomerDal.cs" />
+    <Compile Include="Abstract\IFavoriteDal.cs" />
+    <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Abstract\ISaleDal.cs" />
+    <Compile Include="Abstract\ISubCategoryDal.cs" />
+    <Compile Include="Concreate\EfBrandDal.cs" />
+    <Compile Include="Concreate\EfCommentDal.cs" />
+    <Compile Include="Concreate\EfCustomerDal.cs" />
+    <Compile Include="Concreate\EfCategoryDal.cs" />
+    <Compile Include="Concreate\EfFavoriteDal.cs" />
+    <Compile Include="Concreate\EfProductDal.cs" />
+    <Compile Include="Concreate\EfSaleDal.cs" />
+    <Compile Include="Concreate\EfSubCategoryDal.cs" />
     <Compile Include="DataAccess\E_Shop_Context.cs" />
     <Compile Include="Migrations\201804231800341_Create_CategoryTable.cs" />
     <Compile Include="Migrations\201804231800341_Create_CategoryTable.Designer.cs">
@@ -108,6 +124,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EShop.CoreLayer\EShop.CoreLayer.csproj">
+      <Project>{68B2232B-566C-4D0A-A5C5-83BA145AD050}</Project>
+      <Name>EShop.CoreLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EShop.EntitiesLayer\EShop.EntitiesLayer.csproj">
       <Project>{2DC38D69-03EE-4C4E-96E7-9FE35289AF42}</Project>
       <Name>EShop.EntitiesLayer</Name>
@@ -154,5 +174,6 @@
       <DependentUpon>201804241007531_Relation_Sale_Product_Customer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,3 +4,8 @@ D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\obj\Debug\EShop.CoreLayer.csprojResolveA
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\obj\Debug\EShop.CoreLayer.csproj.CoreCompileInputs.cache
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\obj\Debug\EShop.CoreLayer.dll
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\obj\Debug\EShop.CoreLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EShop.CoreLayer.dll.config
+D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EntityFramework.dll
+D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EntityFramework.xml
+D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EntityFramework.SqlServer.xml

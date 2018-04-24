@@ -27,3 +27,4 @@ D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Mi
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Relation_Comment_Product_Customer.resources
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Relation_Favorite_Customer_Product.resources
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Relation_Sale_Product_Customer.resources
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.CoreLayer.dll.config
