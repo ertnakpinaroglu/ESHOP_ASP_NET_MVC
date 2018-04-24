@@ -23,6 +23,21 @@ namespace EShop.EntitiesLayer.Entities
         public String Size { get; set; }
 
         public int? Star { get; set; }
+        // Bir ürünün  bir alt kategorisi olur!
+
+        public int CategoryId { get; set; }
+        public  Category Category { get; set; }
+
+        // FK-Brand
+        public Brand Brand { get; set; }
+        // Bir ürünün birden fazla yorumu olur 
+        public virtual List<Comment> Comments { get; set; }
+        public virtual List<Favorite> Favorites { get; set; }
+        public Products()
+        {
+            Comments = new List<Comment>();
+            Favorites = new List<Favorite>();
+        }
 
 
     }

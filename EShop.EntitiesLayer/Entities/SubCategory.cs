@@ -19,5 +19,11 @@ namespace EShop.EntitiesLayer.Entities
         public int CategoryId { get; set; } // FK 
         // Bir alt kategori bir kategoriye aittir.
         public virtual Category Category { get; set; }
+        // Bir alt kategorinin birden fazla ürünü olur !
+        public List<Products> Products { get; set; }
+        public SubCategory()
+        {
+            Products = new List<Products>();
+        }
     }
 }

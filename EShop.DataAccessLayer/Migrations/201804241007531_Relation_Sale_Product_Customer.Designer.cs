@@ -7,13 +7,13 @@ namespace EShop.DataAccessLayer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Create_Relation_Category_SubCategory : IMigrationMetadata
+    public sealed partial class Relation_Sale_Product_Customer : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Create_Relation_Category_SubCategory));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Relation_Sale_Product_Customer));
         
         string IMigrationMetadata.Id
         {
-            get { return "201804240901346_Create_Relation_Category_SubCategory"; }
+            get { return "201804241007531_Relation_Sale_Product_Customer"; }
         }
         
         string IMigrationMetadata.Source

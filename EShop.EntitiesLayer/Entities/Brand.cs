@@ -15,6 +15,11 @@ namespace EShop.EntitiesLayer.Entities
         public int BrandId { get; set; }
         public String BrandName { get; set; }
         public String IconImage { get; set; }
-
+        // Bir markanın birden fazla ürünü olur 
+        public List<Products> Products { get; set; }
+        public Brand()
+        {
+            Products = new List<Products>();
+        }
     }
 }

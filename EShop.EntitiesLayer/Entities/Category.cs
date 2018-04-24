@@ -15,6 +15,14 @@ namespace EShop.EntitiesLayer.Entities
 
         // Bir kategorinin birden fazla alt kategorisi olur 
         public virtual List<SubCategory> SubCategories { get; set; } // Navigation prop
+        // Bir kategoriye ait birden fazla ürün olur !
+        public List<Products> Products { get; set; }
+
+        public Category()
+        {
+            SubCategories = new List<SubCategory>();
+            Products = new List<Products>();
+        }
 
     }
 }

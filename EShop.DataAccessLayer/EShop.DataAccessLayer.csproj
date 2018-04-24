@@ -80,9 +80,25 @@
     <Compile Include="Migrations\201804240855329_Create_BrandTable.Designer.cs">
       <DependentUpon>201804240855329_Create_BrandTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804240901346_Create_Relation_Category_SubCategory.cs" />
-    <Compile Include="Migrations\201804240901346_Create_Relation_Category_SubCategory.Designer.cs">
-      <DependentUpon>201804240901346_Create_Relation_Category_SubCategory.cs</DependentUpon>
+    <Compile Include="Migrations\201804240938417_Relation_Product_Category.cs" />
+    <Compile Include="Migrations\201804240938417_Relation_Product_Category.Designer.cs">
+      <DependentUpon>201804240938417_Relation_Product_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240951442_Relation_Brand_Product.cs" />
+    <Compile Include="Migrations\201804240951442_Relation_Brand_Product.Designer.cs">
+      <DependentUpon>201804240951442_Relation_Brand_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240958202_Relation_Comment_Product_Customer.cs" />
+    <Compile Include="Migrations\201804240958202_Relation_Comment_Product_Customer.Designer.cs">
+      <DependentUpon>201804240958202_Relation_Comment_Product_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241002513_Relation_Favorite_Customer_Product.cs" />
+    <Compile Include="Migrations\201804241002513_Relation_Favorite_Customer_Product.Designer.cs">
+      <DependentUpon>201804241002513_Relation_Favorite_Customer_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241007531_Relation_Sale_Product_Customer.cs" />
+    <Compile Include="Migrations\201804241007531_Relation_Sale_Product_Customer.Designer.cs">
+      <DependentUpon>201804241007531_Relation_Sale_Product_Customer.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -122,8 +138,20 @@
     <EmbeddedResource Include="Migrations\201804240855329_Create_BrandTable.resx">
       <DependentUpon>201804240855329_Create_BrandTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804240901346_Create_Relation_Category_SubCategory.resx">
-      <DependentUpon>201804240901346_Create_Relation_Category_SubCategory.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804240938417_Relation_Product_Category.resx">
+      <DependentUpon>201804240938417_Relation_Product_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240951442_Relation_Brand_Product.resx">
+      <DependentUpon>201804240951442_Relation_Brand_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240958202_Relation_Comment_Product_Customer.resx">
+      <DependentUpon>201804240958202_Relation_Comment_Product_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241002513_Relation_Favorite_Customer_Product.resx">
+      <DependentUpon>201804241002513_Relation_Favorite_Customer_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241007531_Relation_Sale_Product_Customer.resx">
+      <DependentUpon>201804241007531_Relation_Sale_Product_Customer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

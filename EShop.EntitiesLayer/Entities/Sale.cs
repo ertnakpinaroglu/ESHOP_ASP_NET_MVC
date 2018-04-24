@@ -16,6 +16,13 @@ namespace EShop.EntitiesLayer.Entities
 
         public bool IsSale { get; set; } // false:basket,true:sale
 
+        public int ProductId { get; set; }
+        public int CustomerId { get; set; }
+
+        public Customer Customer { get; set; }
+        public Products Product { get; set; }
+
+
 
 
     }

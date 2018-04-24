@@ -17,6 +17,9 @@ namespace EShop.EntitiesLayer.Entities
 
         public String IsActive { get; set; }
 
+        public virtual Products Product { get; set; }
+        public virtual Customer Customer { get; set; }
+
 
     }
 }

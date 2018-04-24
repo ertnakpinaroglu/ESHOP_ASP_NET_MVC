@@ -21,6 +21,13 @@ namespace EShop.EntitiesLayer.Entities
         public String Password { get; set; }
 
         public String ProfileImage { get; set; }
-
+        public virtual List<Comment> Comments { get; set; }
+        // Bir müşsterinin birden fazla favorite'ı olur 
+        public virtual List<Favorite> Favorites  { get; set; }
+        public Customer()
+        {
+            Comments = new List<Comment>();
+            Favorites = new List<Favorite>();
+        }
     }
 }
