@@ -22,3 +22,4 @@ D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Mi
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_SaleTable.resources
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_FavoriteTable.resources
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_BrandTable.resources
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_Relation_Category_SubCategory.resources

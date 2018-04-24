@@ -13,6 +13,8 @@ namespace EShop.EntitiesLayer.Entities
         public String CategoryName { get; set; }
         public String CategoryDescription { get; set; }
 
+        // Bir kategorinin birden fazla alt kategorisi olur 
+        public virtual List<SubCategory> SubCategories { get; set; } // Navigation prop
 
     }
 }

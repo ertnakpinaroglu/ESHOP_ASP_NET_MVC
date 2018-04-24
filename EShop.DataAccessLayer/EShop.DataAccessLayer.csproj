@@ -80,6 +80,10 @@
     <Compile Include="Migrations\201804240855329_Create_BrandTable.Designer.cs">
       <DependentUpon>201804240855329_Create_BrandTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804240901346_Create_Relation_Category_SubCategory.cs" />
+    <Compile Include="Migrations\201804240901346_Create_Relation_Category_SubCategory.Designer.cs">
+      <DependentUpon>201804240901346_Create_Relation_Category_SubCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -117,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804240855329_Create_BrandTable.resx">
       <DependentUpon>201804240855329_Create_BrandTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240901346_Create_Relation_Category_SubCategory.resx">
+      <DependentUpon>201804240901346_Create_Relation_Category_SubCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

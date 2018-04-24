@@ -15,6 +15,9 @@ namespace EShop.EntitiesLayer.Entities
         public int SubCategoryId { get; set; }
         public String SubCategoryName { get; set; }
         public String SubCategoryDescription { get; set; }
-
+        // [ForeignKey("Category")]
+        public int CategoryId { get; set; } // FK 
+        // Bir alt kategori bir kategoriye aittir.
+        public virtual Category Category { get; set; }
     }
 }
