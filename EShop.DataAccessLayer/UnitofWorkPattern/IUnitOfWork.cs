@@ -10,17 +10,17 @@ namespace EShop.DataAccessLayer.UnitofWorkPattern
     public interface IUnitOfWork : IDisposable
     {
         // IDisposable gerektignde calisir gerekmediginde silinir.
-        ICategoryDal CategoryRepository { get; set; }
-        ISubCategoryDal SubCategoryRepository { get; set; }
+        ICategoryDal CategoryRepository { get;  }
+        ISubCategoryDal SubCategoryRepository { get;  }
 
-        ICommentDal CommentRepository { get; set; }
+        ICommentDal CommentRepository { get;  }
 
-        ICustomerDal CustomerRepository { get; set; }
-        IProductDal ProductRepository { get; set; }
-        ISaleDal SaleRepository { get; set; }
-        IFavoriteDal FavoriteRepository { get; set; }
+        ICustomerDal CustomerRepository { get; }
+        IProductDal ProductRepository { get;  }
+        ISaleDal SaleRepository { get;  }
+        IFavoriteDal FavoriteRepository { get;  }
 
-        IBrandDal BrandRepository { get; set; }
+        IBrandDal BrandRepository { get;  }
 
         int Complete();
 

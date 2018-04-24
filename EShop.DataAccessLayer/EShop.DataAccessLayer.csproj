@@ -118,6 +118,8 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitofWorkPattern\IUnitOfWork.cs" />
+    <Compile Include="UnitofWorkPattern\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
