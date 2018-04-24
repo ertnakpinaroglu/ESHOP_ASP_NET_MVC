@@ -19,3 +19,6 @@ D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Mi
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_CommentTable.resources
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_ProductTable.resources
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_CustomerTable.resources
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_SaleTable.resources
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_FavoriteTable.resources
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_BrandTable.resources

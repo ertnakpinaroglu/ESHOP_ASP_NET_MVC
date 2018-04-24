@@ -17,6 +17,9 @@ namespace EShop.DataAccessLayer.DataAccess
         public DbSet<Comment> Comments  { get; set; }
         public DbSet<Products> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Favorite> Favorites { get; set; }
+        public DbSet<Sale > Sales{ get; set; }
+        public DbSet<Brand> Brands  { get; set; }
         public E_Shop_Context():base("EShopConnStr")
         {
 

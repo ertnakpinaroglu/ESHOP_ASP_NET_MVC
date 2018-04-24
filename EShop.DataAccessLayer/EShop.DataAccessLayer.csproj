@@ -68,6 +68,18 @@
     <Compile Include="Migrations\201804240845192_Create_CustomerTable.Designer.cs">
       <DependentUpon>201804240845192_Create_CustomerTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804240850222_Create_SaleTable.cs" />
+    <Compile Include="Migrations\201804240850222_Create_SaleTable.Designer.cs">
+      <DependentUpon>201804240850222_Create_SaleTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240851445_Create_FavoriteTable.cs" />
+    <Compile Include="Migrations\201804240851445_Create_FavoriteTable.Designer.cs">
+      <DependentUpon>201804240851445_Create_FavoriteTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240855329_Create_BrandTable.cs" />
+    <Compile Include="Migrations\201804240855329_Create_BrandTable.Designer.cs">
+      <DependentUpon>201804240855329_Create_BrandTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -96,6 +108,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804240845192_Create_CustomerTable.resx">
       <DependentUpon>201804240845192_Create_CustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240850222_Create_SaleTable.resx">
+      <DependentUpon>201804240850222_Create_SaleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240851445_Create_FavoriteTable.resx">
+      <DependentUpon>201804240851445_Create_FavoriteTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240855329_Create_BrandTable.resx">
+      <DependentUpon>201804240855329_Create_BrandTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

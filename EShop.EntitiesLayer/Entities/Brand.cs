@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 
 namespace EShop.EntitiesLayer.Entities
 {
-    public class Favorite:BaseEntity,IEntity
+    public class Brand:BaseEntity,IEntity
     {
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int FavoriteId { get; set; }
+        public int BrandId { get; set; }
+        public String BrandName { get; set; }
+        public String IconImage { get; set; }
 
     }
 }
