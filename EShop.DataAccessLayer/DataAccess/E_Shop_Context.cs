@@ -15,6 +15,8 @@ namespace EShop.DataAccessLayer.DataAccess
         public DbSet<SubCategory> SubCategories{ get; set; }
 
         public DbSet<Comment> Comments  { get; set; }
+        public DbSet<Products> Products { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         public E_Shop_Context():base("EShopConnStr")
         {
 

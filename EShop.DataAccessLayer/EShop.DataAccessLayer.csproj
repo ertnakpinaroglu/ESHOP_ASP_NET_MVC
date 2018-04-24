@@ -60,6 +60,14 @@
     <Compile Include="Migrations\201804231808228_Create_CommentTable.Designer.cs">
       <DependentUpon>201804231808228_Create_CommentTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804240840087_Create_ProductTable.cs" />
+    <Compile Include="Migrations\201804240840087_Create_ProductTable.Designer.cs">
+      <DependentUpon>201804240840087_Create_ProductTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240845192_Create_CustomerTable.cs" />
+    <Compile Include="Migrations\201804240845192_Create_CustomerTable.Designer.cs">
+      <DependentUpon>201804240845192_Create_CustomerTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -82,6 +90,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804231808228_Create_CommentTable.resx">
       <DependentUpon>201804231808228_Create_CommentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240840087_Create_ProductTable.resx">
+      <DependentUpon>201804240840087_Create_ProductTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240845192_Create_CustomerTable.resx">
+      <DependentUpon>201804240845192_Create_CustomerTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
