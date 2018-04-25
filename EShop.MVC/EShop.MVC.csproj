@@ -164,18 +164,76 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\nouislider.min.css" />
+    <Content Include="css\slick-theme.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\slick.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\banner01.jpg" />
+    <Content Include="img\banner02.jpg" />
+    <Content Include="img\banner03.jpg" />
+    <Content Include="img\banner04.jpg" />
+    <Content Include="img\banner05.jpg" />
+    <Content Include="img\banner06.jpg" />
+    <Content Include="img\banner07.jpg" />
+    <Content Include="img\banner08.jpg" />
+    <Content Include="img\banner09.jpg" />
+    <Content Include="img\banner10.jpg" />
+    <Content Include="img\banner11.jpg" />
+    <Content Include="img\banner12.jpg" />
+    <Content Include="img\banner13.jpg" />
+    <Content Include="img\banner14.jpg" />
+    <Content Include="img\banner15.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\main-product01.jpg" />
+    <Content Include="img\main-product02.jpg" />
+    <Content Include="img\main-product03.jpg" />
+    <Content Include="img\main-product04.jpg" />
+    <Content Include="img\product01.jpg" />
+    <Content Include="img\product02.jpg" />
+    <Content Include="img\product03.jpg" />
+    <Content Include="img\product04.jpg" />
+    <Content Include="img\product05.jpg" />
+    <Content Include="img\product06.jpg" />
+    <Content Include="img\product07.jpg" />
+    <Content Include="img\product08.jpg" />
+    <Content Include="img\thumb-product01.jpg" />
+    <Content Include="img\thumb-product02.jpg" />
+    <Content Include="img\thumb-product03.jpg" />
+    <Content Include="img\thumb-product04.jpg" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.zoom.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\nouislider.min.js" />
+    <Content Include="js\slick.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\slick.eot" />
+    <Content Include="fonts\slick.ttf" />
+    <Content Include="fonts\slick.woff" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -212,7 +270,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EShop.BusinessLayer\EShop.BusinessLayer.csproj">

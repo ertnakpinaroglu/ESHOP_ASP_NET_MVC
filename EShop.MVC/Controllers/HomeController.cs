@@ -17,15 +17,7 @@ namespace EShop.MVC.Controllers
         }
         public ActionResult Index()
         {
-            Category category = new Category()
-            {
-                CategoryDescription = "deneme 2",
-                CategoryName = "adi bu olsun 2 ",
-                CreatedDate = DateTime.Now,
-                ModifiedDate = DateTime.Now,
-                RemovedDate = DateTime.Now
-            };
-            _categoryServices.AddCategory(category);
+            
 
             return View();
         }
