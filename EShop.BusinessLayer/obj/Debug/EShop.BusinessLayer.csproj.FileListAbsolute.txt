@@ -4,3 +4,13 @@ D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\obj\Debug\EShop.BusinessLayer.csproj
 D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\obj\Debug\EShop.BusinessLayer.csproj.CoreCompileInputs.cache
 D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\obj\Debug\EShop.BusinessLayer.dll
 D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\obj\Debug\EShop.BusinessLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.DataAccessLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.EntitiesLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EntityFramework.dll
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.CoreLayer.dll
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.DataAccessLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.DataAccessLayer.dll.config
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.EntitiesLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EntityFramework.xml
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.CoreLayer.pdb
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.CoreLayer.dll.config
