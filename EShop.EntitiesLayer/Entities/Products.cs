@@ -28,6 +28,7 @@ namespace EShop.EntitiesLayer.Entities
         public int CategoryId { get; set; }
         public  Category Category { get; set; }
 
+        public String ProfileImage { get; set; }
         // FK-Brand
         public Brand Brand { get; set; }
         // Bir ürünün birden fazla yorumu olur 

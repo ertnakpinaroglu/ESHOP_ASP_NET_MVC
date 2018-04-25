@@ -116,6 +116,10 @@
     <Compile Include="Migrations\201804241007531_Relation_Sale_Product_Customer.Designer.cs">
       <DependentUpon>201804241007531_Relation_Sale_Product_Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804251251515_CreateColumn_ProfileImage_ProductTable.cs" />
+    <Compile Include="Migrations\201804251251515_CreateColumn_ProfileImage_ProductTable.Designer.cs">
+      <DependentUpon>201804251251515_CreateColumn_ProfileImage_ProductTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitofWorkPattern\IUnitOfWork.cs" />
@@ -174,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804241007531_Relation_Sale_Product_Customer.resx">
       <DependentUpon>201804241007531_Relation_Sale_Product_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804251251515_CreateColumn_ProfileImage_ProductTable.resx">
+      <DependentUpon>201804251251515_CreateColumn_ProfileImage_ProductTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
