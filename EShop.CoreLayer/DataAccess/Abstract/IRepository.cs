@@ -18,7 +18,7 @@ namespace EShop.CoreLayer.DataAccess.Abstract
         TEntity FindEntity(Expression<Func<TEntity, bool>> filter);
 
         List<TEntity> FindRange(Expression<Func<TEntity, bool>> filter = null);
-        
 
+        List<TEntity> GetList();
     }
 }

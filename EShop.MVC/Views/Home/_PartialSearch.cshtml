@@ -1,0 +1,20 @@
+﻿@using EShop.MVC.Models
+@model CategoryViewModel
+@{ 
+    Layout = null;
+}
+<div class="header-search">
+    <form>
+        <input class="input search-input" type="text" placeholder="Enter your keyword">
+        <select class="input search-categories">
+            <option>Bütün Kategoriler</option>
+            @foreach (var item in Model.LisCategory)
+            {
+                <option value="@item.CategoryName">@item.CategoryName</option>
+       
+            }
+            
+        </select>
+        <button class="search-btn"><i class="fa fa-search"></i></button>
+    </form>
+</div>

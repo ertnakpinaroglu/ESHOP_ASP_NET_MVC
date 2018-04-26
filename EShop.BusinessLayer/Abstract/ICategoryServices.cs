@@ -11,5 +11,7 @@ namespace EShop.BusinessLayer.Abstract
     {
         void AddCategory(Category category);
 
+        List<Category> GetListCategory();
+
     }
 }

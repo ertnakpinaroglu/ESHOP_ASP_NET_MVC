@@ -11,6 +11,6 @@ namespace EShop.DataAccessLayer.Abstract
     public interface ICategoryDal:IRepository<Category>
     {
         // Category alanına özel kodlar burada tutulacak!
-
+        List<Category> GetListCategoryWithSub();
     }
 }

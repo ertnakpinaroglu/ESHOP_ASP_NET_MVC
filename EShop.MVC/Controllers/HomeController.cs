@@ -1,5 +1,6 @@
 ﻿using EShop.BusinessLayer.Abstract;
 using EShop.EntitiesLayer.Entities;
+using EShop.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,15 @@ namespace EShop.MVC.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult _PartialSearch()
+        {
+            CategoryViewModel categoryViewModel = new CategoryViewModel()
+            {
+                LisCategory = _categoryServices.GetListCategory()
+            };
+            return View(categoryViewModel);
         }
 
 

@@ -49,5 +49,11 @@ namespace EShop.CoreLayer.DataAccess.Concreate
         {
             return _dbSet.Where(filter).ToList();
         }
+
+        public List<TEntity> GetList()
+        {
+            return _dbSet.ToList();
+        }
+
     }
 }

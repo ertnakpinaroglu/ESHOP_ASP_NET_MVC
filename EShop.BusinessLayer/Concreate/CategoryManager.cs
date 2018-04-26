@@ -22,5 +22,11 @@ namespace EShop.BusinessLayer.Concreate
             unitOfWork.CategoryRepository.AddEntity(category);
             unitOfWork.Complete();
         }
+
+        public List<Category> GetListCategory()
+        {
+            return unitOfWork.CategoryRepository.GetListCategoryWithSub();
+        }
+
     }
 }
