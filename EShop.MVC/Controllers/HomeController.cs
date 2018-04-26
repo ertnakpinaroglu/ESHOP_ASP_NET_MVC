@@ -30,8 +30,15 @@ namespace EShop.MVC.Controllers
             return View(categoryViewModel);
         }
 
+        public ActionResult _PartialCategoryList()
+        {
+            CategoryViewModel categoryViewModel = new CategoryViewModel()
+            {
+                LisCategory = _categoryServices.GetListCategory()
+            };
 
+            return View(categoryViewModel);
+        }
 
-   
     }
 }
