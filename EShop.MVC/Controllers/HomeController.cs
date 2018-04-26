@@ -39,6 +39,14 @@ namespace EShop.MVC.Controllers
 
             return View(categoryViewModel);
         }
+        public ActionResult _PartialCategoryTopList()
+        {
+            CategoryViewModel categoryViewModel = new CategoryViewModel()
+            {
+                LisCategory = _categoryServices.GetCategoryTop2()
+            };
+            return View(categoryViewModel);
+        }
 
     }
 }

@@ -12,5 +12,7 @@ namespace EShop.DataAccessLayer.Abstract
     {
         // Category alanına özel kodlar burada tutulacak!
         List<Category> GetListCategoryWithSub();
+
+        List<Category> GetListCategoryTop2();
     }
 }

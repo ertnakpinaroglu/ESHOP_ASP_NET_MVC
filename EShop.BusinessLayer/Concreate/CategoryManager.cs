@@ -23,6 +23,11 @@ namespace EShop.BusinessLayer.Concreate
             unitOfWork.Complete();
         }
 
+        public List<Category> GetCategoryTop2()
+        {
+            return unitOfWork.CategoryRepository.GetListCategoryTop2();
+        }
+
         public List<Category> GetListCategory()
         {
             return unitOfWork.CategoryRepository.GetListCategoryWithSub();

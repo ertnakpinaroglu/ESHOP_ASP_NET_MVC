@@ -13,5 +13,7 @@ namespace EShop.BusinessLayer.Abstract
 
         List<Category> GetListCategory();
 
+        List<Category> GetCategoryTop2();
+
     }
 }

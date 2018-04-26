@@ -257,6 +257,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_PartialSearch.cshtml" />
     <Content Include="Views\Shared\_PartialCategoryList.cshtml" />
+    <Content Include="Views\Home\_PartialCategoryTopList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

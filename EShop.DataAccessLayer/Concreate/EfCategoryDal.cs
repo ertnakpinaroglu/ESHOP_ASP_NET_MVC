@@ -22,5 +22,10 @@ namespace EShop.DataAccessLayer.Concreate
         {
             return dbContext.Categories.Include("SubCategories").ToList();
         }
+
+        public List<Category> GetListCategoryTop2()
+        {
+            return dbContext.Categories.Include("SubCategories").Take(2).ToList();
+        }
     }
 }
