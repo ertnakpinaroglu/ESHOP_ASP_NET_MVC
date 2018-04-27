@@ -175,7 +175,7 @@
                 <!-- /category nav -->
                 <!-- menu nav -->
                     <!-- Partial CategoryPast -->
-                @{ Html.RenderAction("_PartialCategoryTopList");}
+                @{ Html.RenderAction("_PartialCategoryTopList","Home");}
                 <!-- menu nav -->
             </div>
         </div>
@@ -183,7 +183,7 @@
     </div>
     <!-- /NAVIGATION -->
     <!-- HOME -->
-    <div id="home">
+    @*<div id="home">
         <!-- container -->
         <div class="container">
             <!-- home wrap -->
@@ -1008,7 +1008,8 @@
         </div>
         <!-- /container -->
     </div>
-    <!-- /section -->
+    <!-- /section -->*@
+    @RenderBody()
     <!-- FOOTER -->
     <footer id="footer" class="section section-grey">
         <!-- container -->
@@ -1112,7 +1113,7 @@
     <script src="~/js/nouislider.min.js"></script>
     <script src="~/js/jquery.zoom.min.js"></script>
     <script src="~/js/main.js"></script>
-    @RenderBody()
+  
 </body>
 
 </html>

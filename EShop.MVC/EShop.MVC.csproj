@@ -259,10 +259,10 @@
     <Content Include="Views\Shared\_PartialSearch.cshtml" />
     <Content Include="Views\Shared\_PartialCategoryList.cshtml" />
     <Content Include="Views\Shared\_PartialCategoryTopList.cshtml" />
+    <Content Include="Views\Product\AllProducts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -9,7 +9,7 @@ namespace EShop.MVC.Controllers
     public class ProductController : Controller
     {
         // GET: Product
-        public ActionResult Index()
+        public ActionResult AllProducts()
         {
             return View();
         }
