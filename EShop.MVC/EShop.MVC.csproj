@@ -156,6 +156,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="AutofacHelper\AutofacConfiguration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -257,10 +258,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_PartialSearch.cshtml" />
     <Content Include="Views\Shared\_PartialCategoryList.cshtml" />
-    <Content Include="Views\Home\_PartialCategoryTopList.cshtml" />
+    <Content Include="Views\Shared\_PartialCategoryTopList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
