@@ -20,6 +20,7 @@ namespace EShop.DataAccessLayer.DataAccess
         public DbSet<Favorite> Favorites { get; set; }
         public DbSet<Sale > Sales{ get; set; }
         public DbSet<Brand> Brands  { get; set; }
+        public DbSet<ImageFiles> ImageFiles { get; set; }
         public E_Shop_Context():base("EShopConnStr")
         {
 

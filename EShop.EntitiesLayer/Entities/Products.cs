@@ -28,14 +28,16 @@ namespace EShop.EntitiesLayer.Entities
         public int CategoryId { get; set; }
         public  Category Category { get; set; }
 
-        public String ProfileImage { get; set; }
+       
         // FK-Brand
         public Brand Brand { get; set; }
         // Bir ürünün birden fazla yorumu olur 
         public virtual List<Comment> Comments { get; set; }
         public virtual List<Favorite> Favorites { get; set; }
+        public virtual List<ImageFiles> ImageFiles { get; set; }
         public Products()
         {
+            ImageFiles = new List<ImageFiles>();
             Comments = new List<Comment>();
             Favorites = new List<Favorite>();
         }
