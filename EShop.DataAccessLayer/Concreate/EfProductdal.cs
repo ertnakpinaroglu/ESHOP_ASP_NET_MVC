@@ -12,10 +12,15 @@ namespace EShop.DataAccessLayer.Concreate
 {
     public class EfProductDal:Repository<Products>,IProductDal
     {
-        // public E_Shop_Context dbContext { get { return _context as E_Shop_Context; } }
+         public E_Shop_Context dbContext { get { return _context as E_Shop_Context; } }
         public EfProductDal(E_Shop_Context context):base(context)
         {
 
+        }
+
+        public List<Products> GetProductsWithCategory()
+        {
+            return dbContext.Products.Include("Category").ToList();
         }
     }
 }

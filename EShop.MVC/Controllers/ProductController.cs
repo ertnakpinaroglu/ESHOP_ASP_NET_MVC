@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EShop.BusinessLayer.Abstract;
+using EShop.MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,20 @@ namespace EShop.MVC.Controllers
 {
     public class ProductController : Controller
     {
+        private IProductService _productServices;
+        public ProductController(IProductService productService)
+        {
+            _productServices = productService;
+        }
+        
         // GET: Product
         public ActionResult AllProducts()
         {
-            return View();
+            ProductViewModel model = new ProductViewModel()
+            {
+                ProductList = _productServices.GetList()
+            };
+            return View(model);
         }
     }
 }

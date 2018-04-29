@@ -10,6 +10,6 @@ namespace EShop.DataAccessLayer.Abstract
 {
     public interface IProductDal:IRepository<Products>
     {
-
+        List<Products> GetProductsWithCategory();
     }
 }
