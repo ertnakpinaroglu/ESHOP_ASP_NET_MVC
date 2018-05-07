@@ -4,13 +4,13 @@
     Layout = null;
 }
 
-<ul class="category-list">
+<ul class="category-list" id="liste" >
     @foreach (var item in Model.LisCategory)
     {
 
     
     <li class="dropdown side-dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">@item.CategoryName <i class="fa fa-angle-right"></i></a>
+        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">@item.CategoryName <i class="fa fa-angle-right"></i></a>
         <div class="custom-menu">
             <div class="row">
                 <div class="col-md-4">

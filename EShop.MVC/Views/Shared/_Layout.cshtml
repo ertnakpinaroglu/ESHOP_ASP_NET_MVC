@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>E-SHOP HTML Template</title>
+    <title>E-SHOP</title>
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
@@ -20,7 +20,7 @@
     <link type="text/css" rel="stylesheet" href="~/css/slick-theme.css" />
 
     <!-- nouislider -->
-    <link type="text/css" rel="stylesheet" href="~/css/nouislider.min.css" />
+    <link type="text/css" rel="stylesheet" href="~/css/nouislider.min.css" /> 
 
     <!-- Font Awesome Icon -->
     <link rel="stylesheet" href="~/css/font-awesome.min.css">
@@ -36,34 +36,9 @@
     <header>
         <!-- top Header -->
         <div id="top-header">
-            <div class="container">
-                <div class="pull-left">
-                    <span>Online Alışverişe Hoşgeldiniz.</span>
-                </div>
-                <div class="pull-right">
-                    <ul class="header-top-links">
-                        <li><a href="#">Mağaza</a></li>
-                        <li><a href="#">Bülten</a></li>
-                        <li><a href="#">Sık Sorulan Sorular(SSS)</a></li>
-                        <li class="dropdown default-dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">ENG <i class="fa fa-caret-down"></i></a>
-                            <ul class="custom-menu">
-                                <li><a href="#">Turkish (TR)</a></li>
-                                <li><a href="#">English (ENG)</a></li>
-                             
-                            </ul>
-                        </li>
-                        <li class="dropdown default-dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">USD <i class="fa fa-caret-down"></i></a>
-                            <ul class="custom-menu">
-                                <li><a href="#">USD ($)</a></li>
-                                <li><a href="#">EUR (€)</a></li>
-                                <li><a href="#">TL (TL)</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            @{ 
+                Html.RenderAction("TopMenu", "Home");
+            }
         </div>
         <!-- /top Header -->
         <!-- header -->
@@ -165,7 +140,8 @@
             <div id="responsive-nav">
                 <!-- category nav -->
                 <div class="category-nav">
-                    <span class="category-header">Kategoriler <i class="fa fa-list"></i></span>
+
+                    <span class="category-header"> Kategoriler <i class="fa fa-list"></i></span>
                     <!-- Partial CategoryList -->
                     @{ 
                         Html.RenderAction("_PartialCategoryList","Home");

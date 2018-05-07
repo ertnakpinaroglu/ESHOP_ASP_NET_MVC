@@ -48,5 +48,11 @@ namespace EShop.MVC.Controllers
             return View(categoryViewModel);
         }
 
+        public ActionResult TopMenu()
+        {
+
+            return View();
+        }
+
     }
 }

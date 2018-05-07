@@ -261,6 +261,7 @@
     <Content Include="Views\Shared\_PartialCategoryList.cshtml" />
     <Content Include="Views\Shared\_PartialCategoryTopList.cshtml" />
     <Content Include="Views\Product\AllProducts.cshtml" />
+    <Content Include="Views\Home\TopMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
