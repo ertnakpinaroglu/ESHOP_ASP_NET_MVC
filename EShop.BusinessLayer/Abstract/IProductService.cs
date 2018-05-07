@@ -10,5 +10,10 @@ namespace EShop.BusinessLayer.Abstract
     public interface IProductService
     {
         List<Products> GetList();
+
+        Products GetProductByName(String name);
+
+
+
     }
 }

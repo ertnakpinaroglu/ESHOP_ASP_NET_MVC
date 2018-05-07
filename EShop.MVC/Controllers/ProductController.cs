@@ -25,5 +25,14 @@ namespace EShop.MVC.Controllers
             };
             return View(model);
         }
+
+        public ActionResult Details(String name)
+        {
+            ProductViewModel model = new ProductViewModel()
+            {
+                ThatProduct = _productServices.GetProductByName(name)
+            };
+            return View(model.ThatProduct);
+        }
     }
 }

@@ -9,5 +9,6 @@ namespace EShop.MVC.Models
     public class ProductViewModel
     {
         public List<Products> ProductList { get; set; }
+        public Products ThatProduct { get;  set; }
     }
 }
