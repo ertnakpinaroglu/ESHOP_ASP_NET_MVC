@@ -11,5 +11,7 @@ namespace EShop.DataAccessLayer.Abstract
     public interface IProductDal:IRepository<Products>
     {
         List<Products> GetProductsWithCategory();
+
+        Products GetProductFullInfo(String name);
     }
 }

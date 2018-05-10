@@ -22,5 +22,12 @@ namespace EShop.DataAccessLayer.Concreate
         {
             return dbContext.Products.Include("Category").ToList();
         }
+
+        public Products GetProductFullInfo(string name)
+        {
+            return dbContext.Products.Include("Category").Include("Brand").
+                Include("Comments").Include("Favorites").Include("ImageFiles").
+                Where(m => m.ProductName.Equals(name)).FirstOrDefault();
+        }
     }
 }

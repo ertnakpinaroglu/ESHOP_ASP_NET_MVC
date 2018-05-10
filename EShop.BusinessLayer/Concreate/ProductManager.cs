@@ -24,7 +24,7 @@ namespace EShop.BusinessLayer.Concreate
 
         public Products GetProductByName(String name)
         {
-            return unitOfWork.ProductRepository.FindEntity(m => m.ProductName.Equals(name));
+            return unitOfWork.ProductRepository.GetProductFullInfo(name);
         }
     }
 }

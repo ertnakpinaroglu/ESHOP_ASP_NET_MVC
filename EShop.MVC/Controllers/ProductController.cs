@@ -26,12 +26,13 @@ namespace EShop.MVC.Controllers
             return View(model);
         }
 
-        public ActionResult Details(String name)
+        public ActionResult Details(String id)
         {
             ProductViewModel model = new ProductViewModel()
             {
-                ThatProduct = _productServices.GetProductByName(name)
+                ThatProduct = _productServices.GetProductByName(id)
             };
+           
             return View(model.ThatProduct);
         }
     }
