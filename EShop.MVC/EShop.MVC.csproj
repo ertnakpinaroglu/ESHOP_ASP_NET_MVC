@@ -265,6 +265,7 @@
     <Content Include="Views\Shared\RightMenu.cshtml" />
     <Content Include="Views\Shared\StoreTopFilter.cshtml" />
     <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Shared\_PartialFooter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
