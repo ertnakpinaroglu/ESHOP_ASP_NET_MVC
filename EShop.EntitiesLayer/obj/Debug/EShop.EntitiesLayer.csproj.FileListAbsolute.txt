@@ -9,3 +9,5 @@ D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\bin\Debug\EShop.CoreLayer.pdb
 D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\bin\Debug\EntityFramework.dll
 D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\bin\Debug\EShop.CoreLayer.dll.config
 D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\bin\Debug\EntityFramework.xml
+D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\GLOBAL PROJECT\EShop\EShop.EntitiesLayer\bin\Debug\EntityFramework.SqlServer.xml

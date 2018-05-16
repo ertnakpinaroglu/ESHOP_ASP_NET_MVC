@@ -19,27 +19,31 @@ namespace EShop.EntitiesLayer.Entities
 
         public int UnitsInStock { get; set; }
 
-        public String Color { get; set; }
-        public String Size { get; set; }
+        // bir ürünün birden fazla rengi olur !
+       
 
         public int? Star { get; set; }
         // Bir ürünün  bir alt kategorisi olur!
 
         public int CategoryId { get; set; }
         public  Category Category { get; set; }
+        // Bir ürnün birden fazla rengi olur 
 
-       
+        // bir ürünün birden fazla rengi olur.
+        public virtual List<Color> Colors  { get; set; }
         // FK-Brand
         public Brand Brand { get; set; }
         // Bir ürünün birden fazla yorumu olur 
         public virtual List<Comment> Comments { get; set; }
         public virtual List<Favorite> Favorites { get; set; }
         public virtual List<ImageFiles> ImageFiles { get; set; }
+       
         public Products()
         {
             ImageFiles = new List<ImageFiles>();
             Comments = new List<Comment>();
             Favorites = new List<Favorite>();
+            Colors = new List<Color>();
         }
 
 

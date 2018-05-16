@@ -84,3 +84,4 @@ D:\GLOBAL PROJECT\EShop\EShop.MVC\bin\Autofac.xml
 D:\GLOBAL PROJECT\EShop\EShop.MVC\bin\EntityFramework.xml
 D:\GLOBAL PROJECT\EShop\EShop.MVC\bin\EntityFramework.SqlServer.xml
 D:\GLOBAL PROJECT\EShop\EShop.MVC\bin\Autofac.Integration.Mvc.xml
+D:\GLOBAL PROJECT\EShop\EShop.MVC\bin\EShop.EntitiesLayer.dll.config

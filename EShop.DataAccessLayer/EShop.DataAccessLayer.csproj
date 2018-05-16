@@ -120,9 +120,13 @@
     <Compile Include="Migrations\201804251251515_CreateColumn_ProfileImage_ProductTable.Designer.cs">
       <DependentUpon>201804251251515_CreateColumn_ProfileImage_ProductTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804281803044_Create_Table_ImageFiles.cs" />
-    <Compile Include="Migrations\201804281803044_Create_Table_ImageFiles.Designer.cs">
-      <DependentUpon>201804281803044_Create_Table_ImageFiles.cs</DependentUpon>
+    <Compile Include="Migrations\201805162012197_Create_Table_Color.cs" />
+    <Compile Include="Migrations\201805162012197_Create_Table_Color.Designer.cs">
+      <DependentUpon>201805162012197_Create_Table_Color.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805162021395_CreateTable_Size.cs" />
+    <Compile Include="Migrations\201805162021395_CreateTable_Size.Designer.cs">
+      <DependentUpon>201805162021395_CreateTable_Size.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -186,8 +190,11 @@
     <EmbeddedResource Include="Migrations\201804251251515_CreateColumn_ProfileImage_ProductTable.resx">
       <DependentUpon>201804251251515_CreateColumn_ProfileImage_ProductTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804281803044_Create_Table_ImageFiles.resx">
-      <DependentUpon>201804281803044_Create_Table_ImageFiles.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805162012197_Create_Table_Color.resx">
+      <DependentUpon>201805162012197_Create_Table_Color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805162021395_CreateTable_Size.resx">
+      <DependentUpon>201805162021395_CreateTable_Size.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

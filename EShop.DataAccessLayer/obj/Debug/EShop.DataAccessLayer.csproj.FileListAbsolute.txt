@@ -29,4 +29,6 @@ D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Mi
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Relation_Sale_Product_Customer.resources
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.CoreLayer.dll.config
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.CreateColumn_ProfileImage_ProductTable.resources
-D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_Table_ImageFiles.resources
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.EntitiesLayer.dll.config
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_Table_Color.resources
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.CreateTable_Size.resources

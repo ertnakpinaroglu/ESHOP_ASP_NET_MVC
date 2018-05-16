@@ -7,13 +7,13 @@ namespace EShop.DataAccessLayer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Create_Table_ImageFiles : IMigrationMetadata
+    public sealed partial class CreateTable_Size : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Create_Table_ImageFiles));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateTable_Size));
         
         string IMigrationMetadata.Id
         {
-            get { return "201804281803044_Create_Table_ImageFiles"; }
+            get { return "201805162021395_CreateTable_Size"; }
         }
         
         string IMigrationMetadata.Source
