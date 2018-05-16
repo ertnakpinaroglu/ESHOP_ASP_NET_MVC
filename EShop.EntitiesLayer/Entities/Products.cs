@@ -31,6 +31,8 @@ namespace EShop.EntitiesLayer.Entities
 
         // bir ürünün birden fazla rengi olur.
         public virtual List<Color> Colors  { get; set; }
+
+        public virtual List<Size> Sizes { get; set; }
         // FK-Brand
         public Brand Brand { get; set; }
         // Bir ürünün birden fazla yorumu olur 
@@ -44,6 +46,7 @@ namespace EShop.EntitiesLayer.Entities
             Comments = new List<Comment>();
             Favorites = new List<Favorite>();
             Colors = new List<Color>();
+            Sizes = new List<Size>();
         }
 
 

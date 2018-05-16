@@ -7,13 +7,13 @@ namespace EShop.DataAccessLayer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Create_Table_Color : IMigrationMetadata
+    public sealed partial class Create_table_color : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Create_Table_Color));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Create_table_color));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805162012197_Create_Table_Color"; }
+            get { return "201805162114508_Create_table_color"; }
         }
         
         string IMigrationMetadata.Source

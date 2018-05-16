@@ -27,6 +27,7 @@ namespace EShop.DataAccessLayer.Concreate
         {
             return dbContext.Products.Include("Category").Include("Brand").
                 Include("Comments").Include("Favorites").Include("ImageFiles").
+                Include("Colors").Include("Sizes").
                 Where(m => m.ProductName.Equals(name)).FirstOrDefault();
         }
     }

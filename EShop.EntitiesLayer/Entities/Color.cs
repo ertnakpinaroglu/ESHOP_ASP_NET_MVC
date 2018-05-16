@@ -16,6 +16,5 @@ namespace EShop.EntitiesLayer.Entities
         public String ColorName { get; set; }
         public virtual Products Product { get; set; }
 
-
     }
 }

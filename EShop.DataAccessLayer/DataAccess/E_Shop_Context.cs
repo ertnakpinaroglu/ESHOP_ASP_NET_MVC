@@ -22,8 +22,9 @@ namespace EShop.DataAccessLayer.DataAccess
         public DbSet<Brand> Brands  { get; set; }
         public DbSet<ImageFiles> ImageFiles { get; set; }
 
-        public DbSet<Color> Colors { get; set; }
+      
         public DbSet<Size> Sizes { get; set; }
+        public DbSet<Color> Colors { get; set; }
 
         public E_Shop_Context():base("EShopConnStr")
         {
