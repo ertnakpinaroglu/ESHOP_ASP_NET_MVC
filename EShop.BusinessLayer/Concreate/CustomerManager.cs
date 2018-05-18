@@ -30,13 +30,37 @@ namespace EShop.BusinessLayer.Concreate
             return findCustomer;
         }
 
+        public bool IsAlreadyEmail(Customer customer)
+        {
+            bool varmi = true;
+            Customer findedCustomer = unitOfWork.CustomerRepository.FindEntity(m => m.Email.Equals(customer.Email));
+            if (findedCustomer == null)
+            {
+                varmi = false;
+            }
+            return varmi;
+        }
+
+        public bool IsAlreadyUsername(Customer customer)
+        {
+            bool varmi = true;
+            Customer findedCustomer = unitOfWork.CustomerRepository.FindEntity(m => m.Username.Equals(customer.Username));
+            if (findedCustomer == null)
+            {
+                varmi = false;
+            }
+            return varmi;
+        }
+
         public void RegisterCustomer(Customer customer)
         {
-            
-                
+            if (customer!= null)
+            {
+
                 unitOfWork.CustomerRepository.AddEntity(customer);
-                unitOfWork.Complete();
-            
+                unitOfWork.Complete(); 
+            } 
+              
         }
 
 

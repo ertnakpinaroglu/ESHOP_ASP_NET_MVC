@@ -52,11 +52,27 @@ namespace EShop.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                customer.CreatedDate = DateTime.Now;
-                customer.ProfileImage = "/Content/Images/ProfileImages/boy.png";
-                _customerServices.RegisterCustomer(customer);
+                // Kullanıcı adı mevcutsa uyarı ver değilse kullan
+                if (_customerServices.IsAlreadyEmail(customer)==false && _customerServices.IsAlreadyUsername(customer)==false )
+                {
+                    customer.CreatedDate = DateTime.Now;
+                    customer.ProfileImage = "/Content/Images/ProfileImages/boy.png";
+                    _customerServices.RegisterCustomer(customer);
+                    return RedirectToAction("Index", "Home");
+                }
+                else if (_customerServices.IsAlreadyEmail(customer)==true)
+                {
+                    ModelState.AddModelError("", "Girdiğiniz " + customer.Email + "  mevcut.");
+
+                }
+                else if(_customerServices.IsAlreadyUsername(customer)==true)
+                {
+                    ModelState.AddModelError("", "Girdiğiniz " + customer.Username + " kullanıcı adı mevcut.");
+                }
+
             }
-            return RedirectToAction("Index", "Home");
+            return View(customer);
+           
         }
 
         

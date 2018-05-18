@@ -12,5 +12,8 @@ namespace EShop.BusinessLayer.Abstract
 
         void RegisterCustomer(Customer customer);
         Customer GetCustomerForLogin(Customer customer);
+
+        bool IsAlreadyUsername(Customer customer);
+        bool IsAlreadyEmail(Customer customer);
     }
 }
