@@ -47,13 +47,7 @@ namespace EShop.MVC.Controllers
             return View();
         }
 
-        public ActionResult Logout()
-        {
-            Session["loginCustomer"] = null;
-            Session.Abandon();
-            Session.Clear();
-            return View("Home","Index");
-        }
+        
         
     }
 }
