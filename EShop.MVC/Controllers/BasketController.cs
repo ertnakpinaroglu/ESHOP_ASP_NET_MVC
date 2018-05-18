@@ -21,9 +21,10 @@ namespace EShop.MVC.Controllers
         // GET: Basket
         public ActionResult List()
         {
+            Customer loginCustomer = Session["loginCustomer"] as Customer;
             SaleModelView model = new SaleModelView()
             {
-                listSale = _saleServices.List()
+                listSale = _saleServices.List(loginCustomer)
             };
             return View(model.listSale);
             
@@ -42,6 +43,12 @@ namespace EShop.MVC.Controllers
                 
             };
             _saleServices.AddBasket(sale);
+            return RedirectToAction("Index", "Home");
+        }
+
+        public ActionResult RemoveBasket(int id)
+        {
+            _saleServices.RemoveBasket(id);
             return RedirectToAction("Index", "Home");
         }
     }

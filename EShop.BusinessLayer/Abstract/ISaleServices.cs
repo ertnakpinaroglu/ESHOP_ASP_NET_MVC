@@ -11,6 +11,10 @@ namespace EShop.BusinessLayer.Abstract
     {
         void AddBasket(Sale sale);
 
-        List<Sale> List();
+        List<Sale> List(Customer customerId);
+
+        Sale GetSaleById(int id);
+
+        void RemoveBasket(int id);
     }
 }

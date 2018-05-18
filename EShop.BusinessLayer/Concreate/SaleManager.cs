@@ -27,9 +27,21 @@ namespace EShop.BusinessLayer.Concreate
             _unitOfWork.Complete();
         }
 
-        public List<Sale> List()
+        public Sale GetSaleById(int id)
         {
-            return _unitOfWork.SaleRepository.SaleList();
+            return _unitOfWork.SaleRepository.FindEntity(m => m.SaleId == id);
+        }
+
+        public List<Sale> List(Customer customer)
+        {
+            return _unitOfWork.SaleRepository.SaleList(customer);
+        }
+
+        public void RemoveBasket(int id)
+        {
+            Sale deletedSale = GetSaleById(id);
+            _unitOfWork.SaleRepository.DeleteEntity(deletedSale);
+            _unitOfWork.Complete();
         }
     }
 }

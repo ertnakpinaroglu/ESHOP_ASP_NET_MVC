@@ -19,10 +19,12 @@ namespace EShop.DataAccessLayer.Concreate
 
         }
 
-        public List<Sale> SaleList()
+        public List<Sale> SaleList(Customer customer)
         {
-            return dbContext.Sales.Include("Customer").Include("Product").Where(m => m.IsSale == false).ToList();
+            return dbContext.Sales.Include("Customer").Include("Product").Where(m => m.IsSale == false && m.Customer.Username.Equals(customer.Username)).ToList();
 
         }
+
+       
     }
 }
