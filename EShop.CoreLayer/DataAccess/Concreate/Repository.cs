@@ -22,7 +22,7 @@ namespace EShop.CoreLayer.DataAccess.Concreate
 
         public void AddEntity(TEntity entity)
         {
-            _dbSet.Add(entity);
+            _context.Set<TEntity>().Add(entity);
         }
 
         public void AddRange(IEnumerable<TEntity> entities)
