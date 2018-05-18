@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace EShop.BusinessLayer.Abstract
 {
-    public interface ICustomerServices
+    public interface ISaleServices
     {
-
-        void RegisterCustomer(Customer customer);
-        Customer GetCustomerForLogin(Customer customer);
+        void AddBasket(Sale sale); 
     }
 }

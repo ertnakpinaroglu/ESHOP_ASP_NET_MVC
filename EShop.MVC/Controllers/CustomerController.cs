@@ -47,6 +47,18 @@ namespace EShop.MVC.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Register(Customer customer)
+        {
+            if (ModelState.IsValid)
+            {
+                customer.CreatedDate = DateTime.Now;
+                customer.ProfileImage = "/Content/Images/ProfileImages/boy.png";
+                _customerServices.RegisterCustomer(customer);
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
         
         
     }

@@ -30,6 +30,15 @@ namespace EShop.BusinessLayer.Concreate
             return findCustomer;
         }
 
-        
+        public void RegisterCustomer(Customer customer)
+        {
+            
+                
+                unitOfWork.CustomerRepository.AddEntity(customer);
+                unitOfWork.Complete();
+            
+        }
+
+
     }
 }

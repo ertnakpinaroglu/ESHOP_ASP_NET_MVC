@@ -15,3 +15,6 @@ D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EntityFramework.xml
 D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.CoreLayer.pdb
 D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.CoreLayer.dll.config
 D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.EntitiesLayer.dll.config
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EShop.BusinessLayer.dll.config
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\GLOBAL PROJECT\EShop\EShop.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
