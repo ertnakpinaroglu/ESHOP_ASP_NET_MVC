@@ -9,6 +9,8 @@ namespace EShop.BusinessLayer.Abstract
 {
     public interface ISaleServices
     {
-        void AddBasket(Sale sale); 
+        void AddBasket(Sale sale);
+
+        List<Sale> List();
     }
 }

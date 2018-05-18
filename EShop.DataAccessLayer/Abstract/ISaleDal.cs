@@ -10,6 +10,6 @@ namespace EShop.DataAccessLayer.Abstract
 {
     public interface ISaleDal:IRepository<Sale>
     {
-
+        List<Sale> SaleList();
     }
 }

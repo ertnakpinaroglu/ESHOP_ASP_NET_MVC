@@ -1,5 +1,6 @@
 ﻿using EShop.BusinessLayer.Abstract;
 using EShop.EntitiesLayer.Entities;
+using EShop.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,12 @@ namespace EShop.MVC.Controllers
         // GET: Basket
         public ActionResult List()
         {
-            return View();
+            SaleModelView model = new SaleModelView()
+            {
+                listSale = _saleServices.List()
+            };
+            return View(model.listSale);
+            
         }
 
         public ActionResult AddToBasket(String id)

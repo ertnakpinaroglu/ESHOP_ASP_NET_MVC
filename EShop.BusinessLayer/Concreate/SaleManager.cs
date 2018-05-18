@@ -26,5 +26,10 @@ namespace EShop.BusinessLayer.Concreate
             _unitOfWork.SaleRepository.AddEntity(sale);
             _unitOfWork.Complete();
         }
+
+        public List<Sale> List()
+        {
+            return _unitOfWork.SaleRepository.SaleList();
+        }
     }
 }
