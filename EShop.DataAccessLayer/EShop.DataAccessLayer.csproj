@@ -128,6 +128,10 @@
     <Compile Include="Migrations\201805162114508_Create_table_color.Designer.cs">
       <DependentUpon>201805162114508_Create_table_color.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805201332047_Create_Column_Favorite.cs" />
+    <Compile Include="Migrations\201805201332047_Create_Column_Favorite.Designer.cs">
+      <DependentUpon>201805201332047_Create_Column_Favorite.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitofWorkPattern\IUnitOfWork.cs" />
@@ -195,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805162114508_Create_table_color.resx">
       <DependentUpon>201805162114508_Create_table_color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805201332047_Create_Column_Favorite.resx">
+      <DependentUpon>201805201332047_Create_Column_Favorite.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

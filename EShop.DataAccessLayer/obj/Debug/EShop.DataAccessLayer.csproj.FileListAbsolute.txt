@@ -32,3 +32,4 @@ D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Mi
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\bin\Debug\EShop.EntitiesLayer.dll.config
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_Table_Color.resources
 D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.CreateTable_Size.resources
+D:\GLOBAL PROJECT\EShop\EShop.DataAccessLayer\obj\Debug\EShop.DataAccessLayer.Migrations.Create_Column_Favorite.resources

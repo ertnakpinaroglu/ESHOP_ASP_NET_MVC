@@ -13,6 +13,10 @@ namespace EShop.EntitiesLayer.Entities
     {
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int FavoriteId { get; set; }
+
+        public int ProductId { get; set; }
+        public int CustomerId { get; set; }
+
         public virtual Products Product { get; set; }
         public virtual Customer Customer { get; set; }
     }
