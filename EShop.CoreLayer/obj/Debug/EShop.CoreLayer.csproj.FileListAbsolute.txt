@@ -1,6 +1,5 @@
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EShop.CoreLayer.dll
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EShop.CoreLayer.pdb
-D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\obj\Debug\EShop.CoreLayer.csprojResolveAssemblyReference.cache
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\obj\Debug\EShop.CoreLayer.csproj.CoreCompileInputs.cache
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\obj\Debug\EShop.CoreLayer.dll
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\obj\Debug\EShop.CoreLayer.pdb

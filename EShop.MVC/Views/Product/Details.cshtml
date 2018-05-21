@@ -1,13 +1,16 @@
-﻿@model EShop.EntitiesLayer.Entities.Products
+﻿@using EShop.EntitiesLayer.Entities
+@model EShop.EntitiesLayer.Entities.Products
 
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    Customer loginCustomer = Session["loginCustomer"] as Customer;
+    int id = Model.ProductId;
 }
-
+<script src="~/js/jquery.min.js"></script>
 
 <body>
-   
+
     <div id="breadcrumb">
         <div class="container">
             <ul class="breadcrumb">
@@ -31,21 +34,21 @@
                         <div id="product-main-view">
                             @foreach (var item in Model.ImageFiles.ToList())
                             {
-                                <div class="product-view">
-                                    <img src="@item.ProfileImage" alt="">
-                                </div>
+                            <div class="product-view">
+                                <img src="@item.ProfileImage" alt="">
+                            </div>
                             }
 
                         </div>
                         <div id="product-view">
                             @foreach (var item in Model.ImageFiles.ToList())
                             {
-                                <div class="product-view">
-                                    <img src="@item.ProfileImage" alt="">
-                                </div>
+                            <div class="product-view">
+                                <img src="@item.ProfileImage" alt="">
+                            </div>
                             }
-                            
-                           
+
+
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -55,9 +58,10 @@
                                 <span class="sale">-20%</span>
                             </div>
                             <h2 class="product-name">@Model.ProductName</h2>
-                            <h3 class="product-price">@Model.UnitPrice TL 
+                            <h3 class="product-price">
+                                @Model.UnitPrice TL
                                 <del class="product-old-price">Eski Fiyat @Model.UnitPrice TL</del>
-                                </h3>
+                            </h3>
                             <div>
                                 <div class="product-rating">
                                     <i class="fa fa-star"></i>
@@ -71,44 +75,45 @@
                             <p><strong>Durumu :</strong> Buraya durum gelcek!</p>
                             <p><strong>Marka:</strong> @Model.Brand.BrandName </p>
                             <p>
-                              @Model.ProductDescription
+                                @Model.ProductDescription
                             </p>
                             <div class="product-options">
                                 <ul class="size-option">
                                     <li><span class="text-uppercase">Boyut:</span></li>
-                                        @foreach (var item in Model.Sizes.ToList())
-                                        {
-                                            <li><a href="#">@item.SizeName</a></li>
-                                        }
-                                
-                                    
+                                    @foreach (var item in Model.Sizes.ToList())
+                                    {
+                                    <li><a href="#">@item.SizeName</a></li>
+                                    }
+
+
                                 </ul>
                                 <ul class="color-option">
                                     <li><span class="text-uppercase">Renk</span></li>
-                                        @foreach (var item in Model.Colors.ToList())
-                                        {
-                                            <li><a href="#" style="background-color:@item.ColorName;"></a></li>
-                                        }
-                                   
+                                    @foreach (var item in Model.Colors.ToList())
+                                    {
+                                    <li><a href="#" style="background-color:@item.ColorName;"></a></li>
+                                    }
+
                                 </ul>
                             </div>
                             @if (Session["loginCustomer"] != null)
                             {
-                                <div class="product-btns">
-                                    <div class="qty-input">
-                                        <span class="text-uppercase">Adet : </span>
-                                        <input class="input" type="number">
-                                    </div>
-                                    <a href="/Basket/AddToBasket/@Model.ProductName" class="primary-btn add-to-cart">
-                                    <i class="fa fa-shopping-cart"></i> Sepete At </a>
-                                    <div class="pull-right">
-                                        <a href="/Favorite/AddToFavorite/@Model.ProductName" class="main-btn icon-btn"><i class="fa fa-heart"></i></a>
-                                        <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
-                                        <button class="main-btn icon-btn"><i class="fa fa-share-alt"></i></button>
-                                    </div>
+                            <div class="product-btns">
+                                <div class="qty-input">
+                                    <span class="text-uppercase">Adet : </span>
+                                    <input class="input" type="number">
                                 </div>
+                                <a href="/Basket/AddToBasket/@Model.ProductName" class="primary-btn add-to-cart">
+                                    <i class="fa fa-shopping-cart"></i> Sepete At
+                                </a>
+                                <div class="pull-right">
+                                    <a href="/Favorite/AddToFavorite/@Model.ProductName" class="main-btn icon-btn"><i class="fa fa-heart"></i></a>
+                                    <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
+                                    <button class="main-btn icon-btn"><i class="fa fa-share-alt"></i></button>
+                                </div>
+                            </div>
                             }
-                          
+
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -121,7 +126,7 @@
                             <div class="tab-content">
                                 <div id="tab1" class="tab-pane fade in active">
                                     <p>
-                                      @Model.ProductDescription
+                                        @Model.ProductDescription
                                     </p>
                                 </div>
                                 <div id="tab2" class="tab-pane fade in">
@@ -133,8 +138,17 @@
                                                 {
                                                     <div class="single-review">
                                                         <div class="review-heading">
-                                                            <div><a href="#"><i class="fa fa-user-o"></i>@item.Customer.CustomerName </a></div>
-                                                            <div><a href="#"><i class="fa fa-clock-o"></i>@item.CreatedDate </a></div>
+                                                            <div>
+                                                                <a href="#" id="customer">
+                                                                    <i class="fa fa-user-o"></i>@item.Customer.CustomerName
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <a href="#" id="clock">
+                                                                    <i class="fa fa-clock-o"></i>
+                                                                    @item.CreatedDate
+                                                                </a>
+                                                            </div>
                                                             <div class="review-rating pull-right">
                                                                 <i class="fa fa-star"></i>
                                                                 <i class="fa fa-star"></i>
@@ -143,18 +157,14 @@
                                                                 <i class="fa fa-star-o empty"></i>
                                                             </div>
                                                         </div>
-                                                        <div class="review-body">
+                                                        <div class="review-body" id="txtContext">
                                                             <p>
-                                                               @item.Text
+                                                                @item.Text
 
                                                             </p>
                                                         </div>
                                                     </div>
                                                 }
-                                               
-                                               
-
-                                              
 
                                                 <ul class="reviews-pages">
                                                     <li class="active">1</li>
@@ -166,31 +176,43 @@
                                         </div>
                                         <div class="col-md-6">
                                             <h4 class="text-uppercase">Yorum Paylaş </h4>
-                                            <p>E-mail adresiniz paylaşılmayacaktır.</p>
-                                            <form class="review-form">
-                                                <div class="form-group">
-                                                    <input class="input" type="text" placeholder="Your Name" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <input class="input" type="email" placeholder="Email Address" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <textarea class="input" placeholder="Your review"></textarea>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-rating">
-                                                        <strong class="text-uppercase">Puanın </strong>
-                                                        <div class="stars">
-                                                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-                                                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-                                                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-                                                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-                                                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+
+                                            @if (loginCustomer != null)
+                                            {
+                                                
+
+                                                    <form class="review-form" method="post">
+
+                                                        <div class="form-group">
+                                                            <textarea class="input" id="text" name="text" placeholder="Yorumunuz"></textarea>
                                                         </div>
-                                                    </div>
+                                                        <div class="form-group">
+                                                            <div class="input-rating">
+                                                                <strong class="text-uppercase">Puanın </strong>
+                                                                <div class="stars">
+                                                                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                                                                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                                                                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                                                                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                                                                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button id="btnGonder" type="submit" class="primary-btn">Yorumu Gönder </button>
+                                                    </form>
+                                                
+                                            }
+                                            else
+                                            {
+                                                <div class="alert alert-danger">
+                                                    <span>Yorum yapmak için giriş Yapın!</span>
+                                                    <u>
+                                                        <a href="/Customer/Login">  Giriş Buradan <span class="fa fa-smile-o "></span></a>
+
+                                                    </u>
                                                 </div>
-                                                <button class="primary-btn">Yorumu Gönder </button>
-                                            </form>
+                                            }
+
                                         </div>
                                     </div>
 
@@ -206,10 +228,38 @@
         </div>
         <!-- /container -->
     </div>
-   
-    <!-- 
-            Picked For you page is prepared!    
-    -->
-    
 
+    <!--
+            Picked For you page is prepared!
+    -->
 </body>
+<script type="text/javascript">
+
+    $(function () {
+        $("#btnGonder").click(function () {
+            var text = $("#text").val();
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "http://localhost:63211/Comments/DoComment",
+                data: { context: text, productID: @id }
+
+            }).done(function (response) {
+                // Customer , clock , txtContext,
+                var customer = $("#customer");
+                var clock = $("#clock");
+                var context = $("#txtContext");
+
+                if (response != null) {
+                    customer.append("<span> " + response.Customer.CustomerName + " </span>");
+                    clock.append("<span>" + response.CreatedDate + "</span>");
+                    context.append("<p>" + response.Text + "</p>");
+                }
+            });
+
+        });
+    });
+
+
+
+</script>

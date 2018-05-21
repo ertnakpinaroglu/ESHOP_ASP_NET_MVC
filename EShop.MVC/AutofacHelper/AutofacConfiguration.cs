@@ -27,6 +27,7 @@ namespace EShop.MVC.AutofacHelper
             builder.RegisterType<CustomerManager>().As<ICustomerServices>();
             builder.RegisterType<SaleManager>().As<ISaleServices>();
             builder.RegisterType<FavoriteManager>().As<IFavoriteServices>();
+            builder.RegisterType<CommentManager>().As<ICommentServices>();
 
             IContainer container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

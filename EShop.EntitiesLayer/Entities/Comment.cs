@@ -22,8 +22,5 @@ namespace EShop.EntitiesLayer.Entities
 
         public int ProductId { get; set; }
         public int CustomerId { get; set; }
-
-
-
     }
 }
