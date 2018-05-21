@@ -7,5 +7,6 @@ namespace EShop.MVC.Models
     {
         public List<Favorite> FavoriteList { get;  set; }
         public Customer LoginUser { get;  set; }
+        public Favorite GetFavorite { get;  set; }
     }
 }

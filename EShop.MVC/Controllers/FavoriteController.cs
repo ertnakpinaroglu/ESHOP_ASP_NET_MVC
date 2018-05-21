@@ -61,6 +61,13 @@ namespace EShop.MVC.Controllers
             return View(model);
         }
 
-
+        public ActionResult DetailsFavorite(int id)
+        {
+            FavoriteViewModel model = new FavoriteViewModel()
+            {
+                GetFavorite = _favoriteServices.GetFavorite(id)
+            };
+            return View(model.GetFavorite);
+        }
     }
 }

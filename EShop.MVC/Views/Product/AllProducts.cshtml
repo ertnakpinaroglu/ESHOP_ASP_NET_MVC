@@ -177,7 +177,11 @@
                                                 <span class="sale">-20%</span>
                                             </div>
                                             <a href="/Product/Details/@item.ProductName" class="main-btn quick-view"><i class="fa fa-list"></i> DETAYLI İNCELE   </a>
-                                            <img src="~/img/product01.jpg" alt="">
+                                            @foreach (var image in item.ImageFiles.Take(1))
+                                            {
+                                                <img src="@image.ProfileImage" alt="@image.Product.ProductName">
+                                            }
+                                          
                                         </div>
                                         <div class="product-body">
                                             <h3 class="product-price">@item.UnitPrice TL  <del class="product-old-price">Eski Fiyat: @item.UnitPrice</del></h3>

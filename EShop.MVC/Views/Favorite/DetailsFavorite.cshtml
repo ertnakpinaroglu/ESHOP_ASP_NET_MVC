@@ -1,0 +1,67 @@
+﻿@model EShop.EntitiesLayer.Entities.Favorite
+
+@{
+    ViewBag.Title = "DetailsFavorite";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row" style="margin-top:50px;">
+    <div class="col-md-8 col-md-push-3">
+        <div>
+            <h4>Favorite</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Customer.CustomerName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Customer.CustomerName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Product.ProductName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Product.ProductName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.CreatedDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CreatedDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ModifiedDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ModifiedDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.RemovedDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.RemovedDate)
+                </dd>
+
+            </dl>
+        </div>
+        <p>
+           
+            <a href="/Favorite/ListFavorite" class="btn btn-warning">
+                <span class="fa fa-chevron-left"> Listeye Dön </span>
+            </a>
+        </p>
+    </div>
+</div>
+
+<!--  Bu sayfayı gece güncelle! -->
+
+

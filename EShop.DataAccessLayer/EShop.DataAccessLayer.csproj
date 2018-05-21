@@ -132,6 +132,10 @@
     <Compile Include="Migrations\201805201332047_Create_Column_Favorite.Designer.cs">
       <DependentUpon>201805201332047_Create_Column_Favorite.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805210930073_Create_Column_FKS_comment.cs" />
+    <Compile Include="Migrations\201805210930073_Create_Column_FKS_comment.Designer.cs">
+      <DependentUpon>201805210930073_Create_Column_FKS_comment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitofWorkPattern\IUnitOfWork.cs" />
@@ -202,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805201332047_Create_Column_Favorite.resx">
       <DependentUpon>201805201332047_Create_Column_Favorite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805210930073_Create_Column_FKS_comment.resx">
+      <DependentUpon>201805210930073_Create_Column_FKS_comment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
