@@ -1,5 +1,6 @@
 ﻿using EShop.BusinessLayer.Abstract;
 using EShop.EntitiesLayer.Entities;
+using EShop.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,7 +76,19 @@ namespace EShop.MVC.Controllers
            
         }
 
-        
+        public ActionResult MyAccount()
+        {
+            Customer loginCustomer = Session["loginCustomer"] as Customer;
+            CustomerViewModel model = null;
+            if (loginCustomer != null)
+            {
+                 model = new CustomerViewModel()
+                {
+                    UserAccount = loginCustomer
+                };
+            }
+            return View(model.UserAccount);
+        }
         
     }
 }
