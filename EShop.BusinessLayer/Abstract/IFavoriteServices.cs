@@ -10,5 +10,12 @@ namespace EShop.BusinessLayer.Abstract
     public interface IFavoriteServices
     {
         void AddToFavorite(Favorite favorite);
+
+        void RemoveFavorite(Favorite favorite);
+
+        Favorite GetFavorite(int? FavoriteId);
+
+        List<Favorite> GetFavoriteList();
+
     }
 }

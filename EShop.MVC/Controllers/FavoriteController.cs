@@ -1,5 +1,6 @@
 ﻿using EShop.BusinessLayer.Abstract;
 using EShop.EntitiesLayer.Entities;
+using EShop.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,8 +34,33 @@ namespace EShop.MVC.Controllers
             };
             _favoriteServices.AddToFavorite(favorite);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Details","Product",new { id=id });
 
         }
+
+        // Remove favorite 
+        public ActionResult RemoveFavorite(int? id)
+        {
+            if (id != null)
+            {
+                Favorite findedFavorite = _favoriteServices.GetFavorite(id);
+                _favoriteServices.RemoveFavorite(findedFavorite);
+                return RedirectToAction("ListFavorite", "Favorite");
+            }
+            return View();
+        }
+
+        public ActionResult ListFavorite()
+        {
+            FavoriteViewModel model = new FavoriteViewModel()
+            {
+                FavoriteList = _favoriteServices.GetFavoriteList(),
+                LoginUser = Session["loginCustomer"] as Customer
+            };
+           
+            return View(model);
+        }
+
+
     }
 }

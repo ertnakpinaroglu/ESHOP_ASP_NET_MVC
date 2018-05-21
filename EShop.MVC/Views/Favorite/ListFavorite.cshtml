@@ -1,0 +1,80 @@
+﻿@using EShop.MVC.Models
+@model FavoriteViewModel
+
+@{
+    ViewBag.Title = "ListFavorite";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row" style="margin-top:50px;" >
+    <div class="col-md-8 col-md-push-3">
+        <h2 class="text-center text-danger">@Model.LoginUser.Username adlı kullanıcınının Favori Listesi </h2>
+        <table class="table">
+            <tr>
+                <th>
+                    Kullanıcı
+                </th>
+                <th>
+                    Ürün Adı
+                </th>
+                <th>
+                   Urün tanımı
+                </th>
+                <th>
+                   Resimler
+                </th>
+                <th>
+                   Ürün Fiyatı
+                </th>
+                <th>
+                    Stok Durumu
+                </th>
+            </tr>
+
+            @foreach (var item in Model.FavoriteList)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Customer.CustomerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.ProductDescription)
+                    </td>
+                    <td>
+                        @foreach (var images in item.Product.ImageFiles.Take(1))
+                        {
+                            <img  src="@images.ProfileImage" class="img-responsive img-rounded" width="75" />
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.UnitPrice ) TL
+                    </td>
+                    <td>
+                       @if (item.Product.UnitsInStock > 0)
+                       {
+                            <b> Stokta var </b><span class="fa fa-2x fa-angellist" style="color:green"></span>
+                       }
+                       else
+                       {
+                            <b> Stokta yok! </b>
+                       }
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" title="Favorilerimden çıkar" href="/Favorite/RemoveFavorite/@item.FavoriteId">
+                            <span class="fa  fa-trash" title="Favorilerimden çıkar"></span>
+                        </a>
+
+                        <a class="btn btn-success" title="Detaylı Göster" href="/Favorite/DetailsFavorite/@item.FavoriteId">
+                            <span class="fa  fa-list" title="Detaylı Göster"></span>
+                        </a>
+                      
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+

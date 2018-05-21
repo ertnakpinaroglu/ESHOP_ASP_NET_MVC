@@ -25,6 +25,30 @@ namespace EShop.BusinessLayer.Concreate
             unitOfWork.Complete();
         }
 
+        public Favorite GetFavorite(int? FavoriteId)
+        {
+            // get Favorite
+            if (FavoriteId != null)
+            {
+                return unitOfWork.FavoriteRepository.FindEntity(m => m.FavoriteId == FavoriteId);
+            }
+            return null;
+        }
+
+        public List<Favorite> GetFavoriteList()
+        {
+            return unitOfWork.FavoriteRepository.GetList();
+        }
+
+        public void RemoveFavorite(Favorite favorite)
+        {
+            Favorite findedFavorite = GetFavorite(favorite.FavoriteId);
+            if (findedFavorite != null)
+            {
+                unitOfWork.FavoriteRepository.DeleteEntity(findedFavorite);
+                unitOfWork.Complete();
+            }
+        }
 
     }
 }
