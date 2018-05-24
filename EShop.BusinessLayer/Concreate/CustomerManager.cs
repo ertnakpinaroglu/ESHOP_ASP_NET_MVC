@@ -63,6 +63,10 @@ namespace EShop.BusinessLayer.Concreate
               
         }
 
+        public void UpdateCustomer(Customer customer)
+        {
+            unitOfWork.Complete();
 
+        }
     }
 }

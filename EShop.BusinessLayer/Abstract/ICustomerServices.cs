@@ -15,5 +15,10 @@ namespace EShop.BusinessLayer.Abstract
 
         bool IsAlreadyUsername(Customer customer);
         bool IsAlreadyEmail(Customer customer);
+
+
+        void UpdateCustomer(Customer customer);
+
+
     }
 }

@@ -92,9 +92,13 @@ namespace EShop.MVC.Controllers
         
         public ActionResult UpdateAccount(String txtAd,String txtSoyad,String txtEmail)
         {
+            Customer loginCustomer = Session["loginCustomer"] as Customer;
+            loginCustomer.CustomerName = txtAd;
+            loginCustomer.CustomerSurname = txtSoyad;
+            loginCustomer.Email = txtEmail;
+            _customerServices.UpdateCustomer(loginCustomer);
 
-
-            return View();
+            return RedirectToAction("MyAccount", "Customer");
 
         }
 
