@@ -24,10 +24,12 @@ namespace EShop.EntitiesLayer.Entities
         public virtual List<Comment> Comments { get; set; }
         // Bir müşsterinin birden fazla favorite'ı olur 
         public virtual List<Favorite> Favorites  { get; set; }
+        public virtual List<Sale> Sales { get; set; }
         public Customer()
         {
             Comments = new List<Comment>();
             Favorites = new List<Favorite>();
+            Sales = new List<Sale>();
         }
     }
 }

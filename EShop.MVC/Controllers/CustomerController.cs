@@ -90,5 +90,13 @@ namespace EShop.MVC.Controllers
             return View(model.UserAccount);
         }
         
+        public ActionResult UpdateAccount(String txtAd,String txtSoyad,String txtEmail)
+        {
+
+
+            return View();
+
+        }
+
     }
 }

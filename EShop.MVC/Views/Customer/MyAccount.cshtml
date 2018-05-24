@@ -1,81 +1,224 @@
 ﻿@model EShop.EntitiesLayer.Entities.Customer
-    @{
-        ViewBag.Title = "MyAccount";
-        Layout = "~/Views/Shared/_Layout.cshtml";
-    }
+@{
+    ViewBag.Title = "MyAccount";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 <script src="~/js/jquery.min.js"></script>
-    <div class="container" style="margin-top:60px;" >
-        <div class="row">
-            <h2 class="text-center">@Model.Username adlı kullanıcının Profili </h2>
-            <div class=" col-md-push-3 col-md-4">
-                <img  src="@Model.ProfileImage" class="img-responsive img-circle" width="125" />
-               
-            </div>
+<div class="container" style="margin-top:60px;">
+    <div class="row">
+        <h2 class="text-center">@Model.Username adlı kullanıcının Profili </h2>
+        <div class=" col-md-push-3 col-md-4">
+            <img src="@Model.ProfileImage" class="img-responsive img-circle" width="125" />
 
-            <div class="col-md-3 col-md-push-1 ">
-                <div class="row">
-                    <div class="col-md-12">
-                        <form class=" form-horizontal"  method="post" >
+        </div>
+
+        <div class="col-md-3 col-md-push-1 ">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <form class=" form-horizontal" method="post" action="/CustomerController/UpdateAccount">
 
 
-                            <div class="form-group">
-                                Ad <input type="text" class="form-control" value="@Model.CustomerName" />
-                            </div>
+                        <div class="form-group">
+                            Ad  <input type="text" class="form-control" id="txtAd" name="txtAd"  value="@Model.CustomerName" />
+                        </div>
 
-                            <div class="form-group">
+                        <div class="form-group">
 
-                               Soyad <input type="text" class="form-control" value="@Model.CustomerSurname" />
-                            </div>
+                            Soyad <input type="text" class="form-control" id="txtSoyad" name="txtSoyad"  value="@Model.CustomerSurname" />
+                        </div>
 
-                            <div class="form-group">
-                                Email: <input type="text" class="form-control" value="@Model.Email" />
-                            </div>
+                        <div class="form-group">
+                            Email: <input type="text" class="form-control" id="txtEmail" name="txtEmail"   value="@Model.Email" />
+                        </div>
 
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-success" > Güncelle </button>
-                            </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success"> Güncelle </button>
+                        </div>
 
-                            @*<div class="form-group">
+                        @*<div class="form-group">
                                 <div class="alert alert-danger"> Resim güncelle
                                     <input type="file"   />
                                 </div>
                             </div>*@
 
-                            
-                        </form>
+
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-md-push-2  ">
+            <div class="alert alert-danger">
+                <a href="" data-toggle="modal" data-target="#userComments" class="btn btn-primary" title="Yorumlarım">
+                    <span class="fa fa-comment"></span>
+                </a>
+                <a href="" data-toggle="modal" data-target="#userFavorites" class="btn btn-danger" title="Favorilerim">
+                    <span class="fa fa-heart"></span>
+                </a>
+                <a href="" data-toggle="modal"  data-target="#userBaskets" class="btn btn-warning" title="Sepetim">
+                    <span class="fa fa-shopping-basket"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- All modal -->
+        <!-- modal comment -->
+        <div class="modal fade" id="userComments" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center ">
+                        @Model.Username adlı kullanıcının Yaptığınız Yorumlar <br/>
+                        Toplam Yaptığınız Yorum Sayısı  <span class="fa fa-comment"> @Model.Comments.Count()</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-8">
+
+                                @foreach (var item in Model.Comments.ToList())
+                                    {
+                                    <div class="alert alert-info">
+                                        @item.Text <br />
+                                        <span class="fa fa-clock-o">@item.CreatedDate </span>
+                                        <a href="/Product/Details/@item.Product.ProductName"> @item.Product.ProductName </a>
+                                        <a href="/Comment/RemoveComment" title="Yorumu Sil" class="btn btn-danger">
+                                            <span class="fa fa-trash"></span>
+                                        </a>
+                                    </div>
+
+                                    }
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="userFavorites" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" role="document">
+                    <div class="modal-header">
+                        <h2 class="text-center">@Model.Username adlı kullanıcının favori listesi</h2> <br/>
+                        Toplam favori  : <span class="fa fa-heart"> @Model.Favorites.Count()</span>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+
+                                <div class="row">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+ 
+                                                <th scope="col">Ürün Adı</th>
+                                                <th scope="col">Resim</th>
+                                                <th scope="col">Fiyatı</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.Favorites.ToList())
+                                            {
+                                                <tr>
+                                                   
+                                                    <td>@item.Product.ProductName</td>
+                                                    <td>
+                                                        @foreach (var images in item.Product.ImageFiles.Take(1))
+                                                        {
+                                                            <img  src="@images.ProfileImage" class="img-circle" width="60" />
+                                                        }
+
+                                                    </td>
+                                                    <td>@item.Product.UnitPrice TL</td>
+                                                </tr>
+                                            }
+                                            
+                                       
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-3 col-md-push-2  ">
-                <div class="alert alert-danger">
-                    <a href="" class="btn btn-primary" title="Yorumlarım" >
-                        <span class="fa fa-comment"></span>
-                    </a>
-                    <a href="" class="btn btn-danger" title="Favorilerim" >
-                        <span class="fa fa-heart"></span>
-                    </a>
-                    <a href="" class="btn btn-warning" title="Sepetim" >
-                        <span class="fa fa-shopping-basket"></span>
-                    </a>
+        <div id="userBaskets" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" role="document">
+                    <div class="modal-header">
+                        <h2 class="text-center">@Model.Username adlı kullanıcının sepetinin listesi</h2> <br/>
+                        Sepete eklenen sayısı <span class="fa fa-shopping-basket">@Model.Sales.Count()</span> toplam fiyat @Model.Sales.Sum(m=>m.Product.UnitPrice) TL 
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+
+                                <div class="row">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+
+                                                <th scope="col">Ürün Adı</th>
+                                                <th scope="col">Resim</th>
+                                                <th scope="col">Fiyatı</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.Sales.ToList())
+                                            {
+                                                <tr>
+
+                                                    <td>@item.Product.ProductName</td>
+                                                    <td>
+                                                        @foreach (var images in item.Product.ImageFiles.Take(1))
+                                                        {
+                                                            <img src="@images.ProfileImage" class="img-circle" width="60" />
+                                                        }
+
+                                                    </td>
+                                                    <td>@item.Product.UnitPrice TL</td>
+                                                </tr>
+                                            }
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <!-- modal comments -->
 
+    </div>
 
-        </div>
-
+    <div class="row">
 
 
     </div>
 
-<script type="text/javascript">
-    $(function () {
-        var footer = $("#footer");
-        footer.hide();
-    });
-</script>
+
+
+</div>
+
+@*<script type="text/javascript">
+        $(function () {
+            var footer = $("#footer");
+            footer.hide();
+        });
+</script>*@
 
 
