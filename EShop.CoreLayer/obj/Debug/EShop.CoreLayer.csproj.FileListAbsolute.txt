@@ -8,3 +8,4 @@ D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EntityFramework.dll
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EntityFramework.SqlServer.dll
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EntityFramework.xml
 D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\GLOBAL PROJECT\EShop\EShop.CoreLayer\obj\Debug\EShop.CoreLayer.csprojResolveAssemblyReference.cache

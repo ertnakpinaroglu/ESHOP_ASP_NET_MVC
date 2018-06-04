@@ -20,8 +20,7 @@ namespace EShop.MVC.AutofacHelper
             var builder = new ContainerBuilder();
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
 
-            // simdi istediklerini al!
-            
+                        
             builder.RegisterType<CategoryManager>().As<ICategoryServices>();
             builder.RegisterType<ProductManager>().As<IProductService>();
             builder.RegisterType<CustomerManager>().As<ICustomerServices>();
